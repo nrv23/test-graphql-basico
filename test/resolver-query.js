@@ -108,7 +108,7 @@ describe('Testing de Resolvers Type Root: Query', () => {
             } = await tester.graphql(query,undefined,undefined,{});
 
             expect(list).to.be.a('array');
-            expect(list).to.have.lengthOf(0);
+            expect(list).to.have.lengthOf(1);
 
 
         } catch (error) {
